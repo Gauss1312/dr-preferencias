@@ -1,0 +1,12 @@
+Como abrir o protótipo no navegador
+===================================
+
+1. Abra um terminal (Prompt de Comando no Windows) DENTRO desta pasta.
+2. Rode:
+       python -m http.server 8000
+   (no Mac/Linux, se não funcionar: python3 -m http.server 8000)
+3. Abra no navegador: http://localhost:8000
+4. Para parar, volte ao terminal e aperte Ctrl+C.
+
+Não funciona abrir o index.html com dois cliques: o navegador bloqueia
+o carregamento das projeções quando a página é aberta direto do disco.

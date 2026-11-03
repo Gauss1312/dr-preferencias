@@ -1,0 +1,364 @@
+{
+ "versao_dados": 1,
+ "geometria": {
+  "card": 320,
+  "thumb": 14,
+  "margem": 13.0
+ },
+ "treino": {
+  "id": "digits",
+  "nome": "Dígitos 8×8",
+  "descricao": "Dígitos de baixa resolução (treino)",
+  "atlas": {
+   "colunas": 25,
+   "celula": 8,
+   "n": 500
+  },
+  "pool": [
+   {
+    "id": "mds",
+    "tecnica": "MDS",
+    "params": {},
+    "n_visiveis": 378
+   },
+   {
+    "id": "isomap_n10",
+    "tecnica": "Isomap",
+    "params": {
+     "n_neighbors": 10
+    },
+    "n_visiveis": 268
+   },
+   {
+    "id": "se_n10",
+    "tecnica": "SE",
+    "params": {
+     "n_neighbors": 10
+    },
+    "n_visiveis": 79
+   },
+   {
+    "id": "grp",
+    "tecnica": "GRP",
+    "params": {},
+    "n_visiveis": 244
+   },
+   {
+    "id": "tsne_p5",
+    "tecnica": "t-SNE",
+    "params": {
+     "perplexity": 5
+    },
+    "n_visiveis": 154
+   },
+   {
+    "id": "umap_n2_m0.1",
+    "tecnica": "UMAP",
+    "params": {
+     "n_neighbors": 2,
+     "min_dist": 0.1
+    },
+    "n_visiveis": 128
+   },
+   {
+    "id": "umap_n3_m0.3",
+    "tecnica": "UMAP",
+    "params": {
+     "n_neighbors": 3,
+     "min_dist": 0.3
+    },
+    "n_visiveis": 126
+   },
+   {
+    "id": "umap_n15_m0.1",
+    "tecnica": "UMAP",
+    "params": {
+     "n_neighbors": 15,
+     "min_dist": 0.1
+    },
+    "n_visiveis": 62
+   }
+  ]
+ },
+ "datasets": [
+  {
+   "id": "mnist",
+   "nome": "MNIST",
+   "descricao": "Dígitos manuscritos de 0 a 9",
+   "atlas": {
+    "colunas": 25,
+    "celula": 28,
+    "n": 500
+   },
+   "pool": [
+    {
+     "id": "pca",
+     "tecnica": "PCA",
+     "params": {},
+     "n_visiveis": 231
+    },
+    {
+     "id": "mds",
+     "tecnica": "MDS",
+     "params": {},
+     "n_visiveis": 396
+    },
+    {
+     "id": "isomap_n10",
+     "tecnica": "Isomap",
+     "params": {
+      "n_neighbors": 10
+     },
+     "n_visiveis": 273
+    },
+    {
+     "id": "se_n10",
+     "tecnica": "SE",
+     "params": {
+      "n_neighbors": 10
+     },
+     "n_visiveis": 150
+    },
+    {
+     "id": "grp",
+     "tecnica": "GRP",
+     "params": {},
+     "n_visiveis": 274
+    },
+    {
+     "id": "tsne_p15",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 15
+     },
+     "n_visiveis": 250
+    },
+    {
+     "id": "tsne_p30",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 30
+     },
+     "n_visiveis": 277
+    },
+    {
+     "id": "tsne_p40",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 40
+     },
+     "n_visiveis": 299
+    },
+    {
+     "id": "tsne_p50",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 50
+     },
+     "n_visiveis": 338
+    },
+    {
+     "id": "tsne_p65",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 65
+     },
+     "n_visiveis": 320
+    },
+    {
+     "id": "tsne_p100",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 100
+     },
+     "n_visiveis": 291
+    },
+    {
+     "id": "umap_n2_m0.1",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 2,
+      "min_dist": 0.1
+     },
+     "n_visiveis": 127
+    },
+    {
+     "id": "umap_n3_m0.3",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 3,
+      "min_dist": 0.3
+     },
+     "n_visiveis": 217
+    },
+    {
+     "id": "umap_n5_m0.1",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 5,
+      "min_dist": 0.1
+     },
+     "n_visiveis": 184
+    },
+    {
+     "id": "umap_n8_m0.2",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 8,
+      "min_dist": 0.2
+     },
+     "n_visiveis": 276
+    },
+    {
+     "id": "umap_n15_m0.8",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 15,
+      "min_dist": 0.8
+     },
+     "n_visiveis": 373
+    }
+   ]
+  },
+  {
+   "id": "fashion",
+   "nome": "Fashion MNIST",
+   "descricao": "Peças de roupa e calçados",
+   "atlas": {
+    "colunas": 25,
+    "celula": 28,
+    "n": 500
+   },
+   "pool": [
+    {
+     "id": "pca",
+     "tecnica": "PCA",
+     "params": {},
+     "n_visiveis": 303
+    },
+    {
+     "id": "mds",
+     "tecnica": "MDS",
+     "params": {},
+     "n_visiveis": 369
+    },
+    {
+     "id": "isomap_n10",
+     "tecnica": "Isomap",
+     "params": {
+      "n_neighbors": 10
+     },
+     "n_visiveis": 281
+    },
+    {
+     "id": "se_n10",
+     "tecnica": "SE",
+     "params": {
+      "n_neighbors": 10
+     },
+     "n_visiveis": 123
+    },
+    {
+     "id": "grp",
+     "tecnica": "GRP",
+     "params": {},
+     "n_visiveis": 174
+    },
+    {
+     "id": "tsne_p5",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 5
+     },
+     "n_visiveis": 213
+    },
+    {
+     "id": "tsne_p10",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 10
+     },
+     "n_visiveis": 207
+    },
+    {
+     "id": "tsne_p50",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 50
+     },
+     "n_visiveis": 290
+    },
+    {
+     "id": "tsne_p65",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 65
+     },
+     "n_visiveis": 255
+    },
+    {
+     "id": "tsne_p80",
+     "tecnica": "t-SNE",
+     "params": {
+      "perplexity": 80
+     },
+     "n_visiveis": 279
+    },
+    {
+     "id": "umap_n2_m0.1",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 2,
+      "min_dist": 0.1
+     },
+     "n_visiveis": 104
+    },
+    {
+     "id": "umap_n3_m0.3",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 3,
+      "min_dist": 0.3
+     },
+     "n_visiveis": 146
+    },
+    {
+     "id": "umap_n5_m0.1",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 5,
+      "min_dist": 0.1
+     },
+     "n_visiveis": 99
+    },
+    {
+     "id": "umap_n5_m0.5",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 5,
+      "min_dist": 0.5
+     },
+     "n_visiveis": 193
+    },
+    {
+     "id": "umap_n10_m0.8",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 10,
+      "min_dist": 0.8
+     },
+     "n_visiveis": 293
+    },
+    {
+     "id": "umap_n15_m0.1",
+     "tecnica": "UMAP",
+     "params": {
+      "n_neighbors": 15,
+      "min_dist": 0.1
+     },
+     "n_visiveis": 147
+    }
+   ]
+  }
+ ]
+}
